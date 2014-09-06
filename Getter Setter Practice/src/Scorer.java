@@ -43,14 +43,13 @@ public class Scorer
 		}
 	
 	public static void adjustScores()
-	{
-	for (int i = 0; i < results.size(); i++)
 		{
-		if (results.get(i).getScore() < 55)
+		for (int i = 0; i < results.size(); i++)
 			{
-			results.get(i).setScore(55);
+			if (results.get(i).getScore() < 55)
+				{
+				results.get(i).setScore(55);
+				}
 			}
 		}
-	}
-
 	}
